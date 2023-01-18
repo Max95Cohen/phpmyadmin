@@ -13,7 +13,7 @@ declare(strict_types=1);
  * This is needed for cookie based authentication to encrypt password in
  * cookie. Needs to be 32 chars long.
  */
-$cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = 'lFXo4cfi95A1b!67@T#v82Vt3NhLnUBI0E_e'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 
 /**
  * Servers configuration
@@ -156,6 +156,8 @@ $cfg['Servers'][$i]['ShowDatabasesNavigationAsTree'] = false;
 $cfg['ThemeDefault'] = 'original';
 $cfg['Servers'][$i]['hide_db'] = '^(information_schema|performance_schema|mysql|phpmyadmin|sys)$';
 $cfg['Server']['hide_db'] = '^(information_schema|performance_schema|mysql|phpmyadmin|sys)$';
+$cfg['Servers'][$i]['recent'] = false;
+$cfg['Servers'][$i]['favorite'] = false;
 $cfg['MaxNavigationItems'] = 500;
 $cfg['TablePrimaryKeyOrder'] = 'desc';
 
